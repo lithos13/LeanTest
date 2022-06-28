@@ -23,7 +23,7 @@ The main script was created in this file and it has the following functions:
 * **buildMail()**:This function starts the process once it is called and according to the process logical steps, calls the regarding other functions
 ![buildEmail](https://user-images.githubusercontent.com/68198144/176248471-d0b394bd-df5a-4a17-88d0-5fc0af6af98d.jpg)
 
-* **sendMail()**: This function connect with email account and sends email.
+* **sendMail()**: This function connects with email account and sends email.
 ![sendMail](https://user-images.githubusercontent.com/68198144/176248396-ebab5fba-d65d-404e-bd83-54ccf51a760b.jpg)
 
 ## template.html
