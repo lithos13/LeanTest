@@ -26,8 +26,8 @@ For executing process it should be create an enviroment file with the following 
 
 # User Manual
 As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this can affect us.
-##Case 1:
+## Case 1:
 Now the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more, in this case we would need to identify which of them would be the correct table and check if the procces is using it, now if the process is using another table we would need to indentify its index and change it.
 
-##Case 2:
-The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"]. If we have an error according to these columns names, we would need make a change in its regarding column
+## Case 2:
+The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"]. If we have an error according to these columns names, we would need make a change in its regarding column as the follow image shows
