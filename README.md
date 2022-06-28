@@ -26,12 +26,14 @@ The main script was created in this file and it has the following functions:
 * **sendMail()**: this functions connect with email account and sends email.
 ![sendMail](https://user-images.githubusercontent.com/68198144/176248396-ebab5fba-d65d-404e-bd83-54ccf51a760b.jpg)
 
-##template.html
+## template.html
 This file was created as a email template and is used from openHtml function
+![template](https://user-images.githubusercontent.com/68198144/176249088-85739592-285c-4a82-99ec-1998f2a4a2ea.jpg)
 
 
 ## .env
 For executing process it should be create an enviroment file with the following variables:
+![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
 
 # User Manual
 As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this can affect us.
@@ -43,3 +45,4 @@ The webpage owner could changes as well the column titles and this actions could
 
 ## Case 3:
 If you need to use or change other email account such as "from" or "to", within .env file you could make those changes
+![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
