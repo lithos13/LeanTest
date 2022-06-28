@@ -41,8 +41,12 @@ As all automations it is important having in mind that all resources we are usin
 Now the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more, in this case we would need to identify which of them would be the correct table and check if the procces is using it, therefore if the process is using another table we would need to indentify its index and change it.
 ![webpage](https://user-images.githubusercontent.com/68198144/176249877-bdc0b017-cf0a-4584-933e-f1508f042a54.jpg)
 
+![getTable](https://user-images.githubusercontent.com/68198144/176250571-9daf8f6f-117f-4ae9-8150-2d507412e642.jpg)
+
 ## Case 2:
 The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"]. If we have an error according to these columns names, we would need make a change in its regarding column as the follow image shows
+![columnTitles](https://user-images.githubusercontent.com/68198144/176250034-9a0e0d3e-6f94-4888-8330-4018c8ecaffd.jpg)
+
 
 ## Case 3:
 If you need to use or change other email account such as "from" or "to", within .env file you could make those changes
