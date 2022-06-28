@@ -41,7 +41,7 @@ As all automations it is important having in mind that all resources we are usin
 Today the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more 
 ![webpage](https://user-images.githubusercontent.com/68198144/176249877-bdc0b017-cf0a-4584-933e-f1508f042a54.jpg)
 
-In this case we would need to identify which of them would be the correct table and check if the procces is using it, therefore if the process is using another table we would need to indentify its index and change it.
+In this case we would need to identify which of them would be the correct table and check if the procces is using it, therefore if the process is using another table we would need to indentify its index and change it.\
 ![getTable](https://user-images.githubusercontent.com/68198144/176250571-9daf8f6f-117f-4ae9-8150-2d507412e642.jpg)
 
 ## Case 2:
