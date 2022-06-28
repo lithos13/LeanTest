@@ -15,6 +15,8 @@ Python v3.10.4
 ## taxes.py
 The main script was created in this file and it has the following functions:
 * **getTaxes()**: This function uses pandas library for getting the table from on taxes webpage and processing its regarding data according to the given requirements
+* ![get_Taxes](https://user-images.githubusercontent.com/68198144/176247544-d5722c3c-9032-4208-a889-018f8c396e98.jpg)
+* 
 * **openHtml()**: This function uses **template.html** which has the email design and replaces labels with its regarding information
 * **buildMail()**:This function starts the process once it is called and according to the process logical steps, calls the regarding other functions
 * **sendMail()**: this functions connect with email account and sends email.
