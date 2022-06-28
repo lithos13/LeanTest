@@ -54,3 +54,6 @@ The web page owner could change the column titles as well, and these actions cou
 ## Case 3:
 If you need to use or change another email account, such as "from" or "to," you can do so within the **.env** file.
 ![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
+
+# Final Result
+
