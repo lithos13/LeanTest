@@ -15,6 +15,7 @@ Python v3.10.4
 ## taxes.py
 The main script was created in this file and it has the following functions:
 * **getTaxes()**: This function uses pandas library for getting the table from on taxes webpage and processing its regarding data according to the given requirements
+
 ![get_Taxes](https://user-images.githubusercontent.com/68198144/176247544-d5722c3c-9032-4208-a889-018f8c396e98.jpg)
 
 * **openHtml()**: This function uses **template.html** which has the email design and replaces labels with its regarding information
@@ -38,16 +39,18 @@ For executing process it should be create an enviroment file with the following 
 # User Manual
 As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this can affect us.
 ## Case 1:
-Now the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more, in this case we would need to identify which of them would be the correct table and check if the procces is using it, therefore if the process is using another table we would need to indentify its index and change it.
+Today the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more 
 ![webpage](https://user-images.githubusercontent.com/68198144/176249877-bdc0b017-cf0a-4584-933e-f1508f042a54.jpg)
 
+In this case we would need to identify which of them would be the correct table and check if the procces is using it, therefore if the process is using another table we would need to indentify its index and change it.
 ![getTable](https://user-images.githubusercontent.com/68198144/176250571-9daf8f6f-117f-4ae9-8150-2d507412e642.jpg)
 
 ## Case 2:
-The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"]. If we have an error according to these columns names, we would need make a change in its regarding column as the follow image shows
+The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].
 ![columnTitles](https://user-images.githubusercontent.com/68198144/176250034-9a0e0d3e-6f94-4888-8330-4018c8ecaffd.jpg)
 
-![keyVariables](https://user-images.githubusercontent.com/68198144/176250825-6a1b777d-5554-4e4b-b48b-84b5866c9f18.jpg)
+ If we have an error according to these columns names, we would need to make a change in its regarding column as the follow image shows
+ ![keyVariables](https://user-images.githubusercontent.com/68198144/176250825-6a1b777d-5554-4e4b-b48b-84b5866c9f18.jpg)
 
 
 ## Case 3:
