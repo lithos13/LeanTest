@@ -12,6 +12,10 @@ Python v3.10.4
 * **pretty_html_table**: for applying style to html tables within email messages
 * **decouple**: for using environment variables
 
+## .env
+For executing process it should be create an enviroment file with the following variables:
+![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
+
 ## taxes.py
 The main script was created in this file and it has the following functions:
 * **getTaxes()**: This function uses pandas library for getting the table from on taxes webpage and processing its regarding data according to the given requirements.\
@@ -29,11 +33,6 @@ The main script was created in this file and it has the following functions:
 ## template.html
 This file was created as a email template and is used from openHtml function
 ![template](https://user-images.githubusercontent.com/68198144/176249088-85739592-285c-4a82-99ec-1998f2a4a2ea.jpg)
-
-
-## .env
-For executing process it should be create an enviroment file with the following variables:
-![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
 
 # User Manual
 As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this can affect us.
