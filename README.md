@@ -4,6 +4,7 @@ This project has been created in order to identify tax prices for both Canada an
 # Technical Requirements
 Python v3.10.4
 ### Libraries:
+
 * **Pandas**: for getting taxe's table and handle data
 * **smtplib, ssl**: for connecting with email account and sending emails
 * **email.mime.multipart**: for helping to create email message and using html template
@@ -31,3 +32,6 @@ Now the web page only has one table that we are using for getting the informatio
 
 ## Case 2:
 The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"]. If we have an error according to these columns names, we would need make a change in its regarding column as the follow image shows
+
+## Case 3:
+If you need to use or change other email account such as "from" or "to", within .env file you could make those changes
