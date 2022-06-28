@@ -53,5 +53,5 @@ The webpage owner could changes as well the column titles and this actions could
 
 
 ## Case 3:
-If you need to use or change other email account such as "from" or "to", within .env file you could make those changes
+If you need to use or change other email account such as "from" or "to", within **.env** file you could make those changes
 ![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
