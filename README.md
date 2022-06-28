@@ -1,37 +1,37 @@
 # Lean Tech Test
-This project has been created in order to identify tax prices for both Canada and the United States
+This project has been created in order to identify tax prices for both Canada and the United States.
 
 # Technical Requirements
 Python v3.10.4
 ### Libraries:
 ![technical_req](https://user-images.githubusercontent.com/68198144/176246642-12ea4348-3f77-4fe3-b7fb-f69f1e3c2cfe.jpg)
-* **Pandas**: for getting taxe's table and handle data
-* **smtplib, ssl**: for connecting with email account and sending emails
-* **email.mime.multipart**: for helping to create email message and using html template
-* **email.mime.text**: for creating complete message structure
-* **pretty_html_table**: for applying style to html tables within email messages
-* **decouple**: for using environment variables
+* **Pandas**: for obtaining the taxe's table and handling data
+* **smtplib, ssl**: for connecting with an email account and sending emails.
+* **email.mime.multipart**: for helping to create email messages and using html template
+* **email.mime.text**: for creating a complete message structure.
+* **pretty_html_table**: for applying style to html tables within email messages.
+* **decouple**: for making use of environmental variables.
 
 ## .env
-For executing process it should be create an enviroment file with the following variables:
+For the process to run, an environment file with the following variables should be created:
 ![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
 
 ## taxes.py
-The main script was created in this file and it has the following functions:
-* **getTaxes()**: This function uses pandas library for getting the table from on taxes webpage and processing its regarding data according to the given requirements.\
+This file contains the main script, which performs the following functions:
+* **getTaxes()**: This function uses the pandas library for getting the table from the taxes webpage and processing its related data according to the given requirements.\
 ![get_Taxes](https://user-images.githubusercontent.com/68198144/176247544-d5722c3c-9032-4208-a889-018f8c396e98.jpg)
 
-* **openHtml()**: This function uses **template.html** which has the email design and replaces labels such as {{msj}} {{tableMax}} {{tableMin}} {{tableUs}} {{tableCan}} with their regarding information
+* **openHtml()**: This function uses **template.html**  which contains the email design and replaces labels such as {{msj}} {{tableMax}} {{tableMin}} {{tableUs}} {{tableCan}} with their relevant information
 ![openHTML](https://user-images.githubusercontent.com/68198144/176248285-0b63f09a-f232-4592-9db8-8a42a56b9706.jpg)
 
-* **buildMail()**:This function starts the process once it is called and according to the process logical steps, calls the regarding other functions
+* **buildMail()**:This function starts the process once it is called and, according to the process logical steps, calls the other functions as well.
 ![buildEmail](https://user-images.githubusercontent.com/68198144/176248471-d0b394bd-df5a-4a17-88d0-5fc0af6af98d.jpg)
 
-* **sendMail()**: This function connects with email account and sends email.
+* **sendMail()**: This function connects with an email account and sends email.
 ![sendMail](https://user-images.githubusercontent.com/68198144/176248396-ebab5fba-d65d-404e-bd83-54ccf51a760b.jpg)
 
 ## template.html
-This file was created as a email template and is used from openHtml function
+This file was created as an email template and is used by the openHtml function.
 ![template](https://user-images.githubusercontent.com/68198144/176249088-85739592-285c-4a82-99ec-1998f2a4a2ea.jpg)
 
 # User Manual
