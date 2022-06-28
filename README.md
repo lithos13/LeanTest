@@ -44,7 +44,7 @@ In this case we would need to identify which of them would be the correct table 
 ![getTable](https://user-images.githubusercontent.com/68198144/176250571-9daf8f6f-117f-4ae9-8150-2d507412e642.jpg)
 
 ## Case 2:
-The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].
+The webpage owner could changes as well the column titles and this actions could affect our process, currently we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].
 ![columnTitles](https://user-images.githubusercontent.com/68198144/176250034-9a0e0d3e-6f94-4888-8330-4018c8ecaffd.jpg)
 
  If we have an error according to these columns names, we would need to make a change in its regarding column as the follow image shows
