@@ -4,7 +4,7 @@ This project has been created in order to identify tax prices for both Canada an
 # Technical Requirements
 Python v3.10.4
 ### Libraries:
-
+![technical_req](https://user-images.githubusercontent.com/68198144/176246642-12ea4348-3f77-4fe3-b7fb-f69f1e3c2cfe.jpg)
 * **Pandas**: for getting taxe's table and handle data
 * **smtplib, ssl**: for connecting with email account and sending emails
 * **email.mime.multipart**: for helping to create email message and using html template
