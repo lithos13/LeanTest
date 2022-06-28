@@ -35,22 +35,22 @@ This file was created as a email template and is used from openHtml function
 ![template](https://user-images.githubusercontent.com/68198144/176249088-85739592-285c-4a82-99ec-1998f2a4a2ea.jpg)
 
 # User Manual
-As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this could affect the process.
+As with all automation, it is important to keep in mind that all resources we are using in this solution are not handled by ourselves. The webpage design can be changed by its owner and this could affect the process.
 ## Case 1:
-Today the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more 
+Today, the web page only has one table that we are using for getting the information we need, but the webpage owner could add another table or more.
 ![webpage](https://user-images.githubusercontent.com/68198144/176249877-bdc0b017-cf0a-4584-933e-f1508f042a54.jpg)
 
-In this case we would need to identify which of them would be the correct table and check if the procces is using it, therefore if the process is using another table we would need to indentify its index and change it.\
+In this case, we would need to identify which of them would be the correct table and check if the process is using it. Therefore, if the process is using another table, we would need to identify its index and change it.\
 ![getTable](https://user-images.githubusercontent.com/68198144/176250571-9daf8f6f-117f-4ae9-8150-2d507412e642.jpg)
 
 ## Case 2:
-The webpage owner could changes as well the column titles and this actions could affect our process, currently we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].
+The web page owner could change the column titles as well, and these actions could affect our process. Currently, we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].
 ![columnTitles](https://user-images.githubusercontent.com/68198144/176250034-9a0e0d3e-6f94-4888-8330-4018c8ecaffd.jpg)
 
- If we have an error according to these columns names, we would need to make a change in its regarding column as the follow image shows
+ If we have an error according to these columns' names, we would need to make a change in its regarding column as the following image shows.
  ![keyVariables](https://user-images.githubusercontent.com/68198144/176250825-6a1b777d-5554-4e4b-b48b-84b5866c9f18.jpg)
 
 
 ## Case 3:
-If you need to use or change other email account such as "from" or "to", within **.env** file you could make those changes
+If you need to use or change another email account, such as "from" or "to," you can do so within the **.env** file.
 ![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
