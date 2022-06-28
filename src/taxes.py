@@ -1,5 +1,4 @@
 from email.message import EmailMessage
-from mimetypes import init
 import pandas as pd
 import smtplib, ssl
 from email.mime.multipart import MIMEMultipart
@@ -11,23 +10,30 @@ def getTaxes():
     url     = 'https://www.iftach.org/taxmatrix4/Taxmatrix.php'
     table   = pd.read_html(url)[0]
     df      = pd.DataFrame(table)
-    df      = df[["State / Province","Rate", "Special Diesel","Biodiesel"]]
+
+    #Key variables
+    state     ="State / Province"
+    biodiesel ="Biodiesel"
+    special   ="Special Diesel"
+    rate      ="Rate"
+    df        = df[[state,rate, special, biodiesel]]
+    
 
     #Canada details
-    dfCan  = df.loc[(df['Rate'] == 'Can.')]
+    dfCan  = df.loc[(df[rate] == 'Can.')]
     taxCan = build_table(dfCan, 'blue_light') 
-    maxCanBio = dfCan["Biodiesel"].max()
-    maxCanSpe = dfCan["Special Diesel"].max()
-    minCanBio = dfCan["Biodiesel"].min()
-    minCanSpe = dfCan["Special Diesel"].min()
+    maxCanBio = dfCan[biodiesel].max()
+    maxCanSpe = dfCan[special].max()
+    minCanBio = dfCan[biodiesel].min()
+    minCanSpe = dfCan[special].min()
            
     #US details
-    dfUS    = df.loc[(df['Rate'] == 'U.S.')]
+    dfUS    = df.loc[(df[rate] == 'U.S.')]
     taxUS   = build_table(dfUS, 'blue_light')
-    maxUSBio= dfUS["Biodiesel"].max()
-    maxUSSpe= dfUS["Special Diesel"].max()    
-    minUSBio= dfUS["Biodiesel"].min()
-    minUSSpe= dfUS["Special Diesel"].min()   
+    maxUSBio= dfUS[biodiesel].max()
+    maxUSSpe= dfUS[special].max()    
+    minUSBio= dfUS[biodiesel].min()
+    minUSSpe= dfUS[special].min()   
     
     
     # Max per country
