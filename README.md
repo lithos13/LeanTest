@@ -24,7 +24,7 @@ This file contains the main script, which performs the following functions:
 * **openHtml()**: This function uses **template.html**  which contains the email design and replaces labels such as {{msj}} {{tableMax}} {{tableMin}} {{tableUs}} {{tableCan}} with their relevant information
 ![openHTML](https://user-images.githubusercontent.com/68198144/176248285-0b63f09a-f232-4592-9db8-8a42a56b9706.jpg)
 
-* **buildMail()**:This function starts the process once it is called and, according to the process logical steps, calls the other functions as well.
+* **buildMail()**:This function starts the process once it is called and, according to the process logical steps, calls the other functions as well.\
 ![buildEmail](https://user-images.githubusercontent.com/68198144/176248471-d0b394bd-df5a-4a17-88d0-5fc0af6af98d.jpg)
 
 * **sendMail()**: This function connects with an email account and sends email.
@@ -44,13 +44,16 @@ In this case, we would need to identify which of them would be the correct table
 ![getTable](https://user-images.githubusercontent.com/68198144/176250571-9daf8f6f-117f-4ae9-8150-2d507412e642.jpg)
 
 ## Case 2:
-The web page owner could change the column titles as well, and these actions could affect our process. Currently, we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].
+The web page owner could change the column titles as well, and these actions could affect our process. Currently, we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"].\
 ![columnTitles](https://user-images.githubusercontent.com/68198144/176250034-9a0e0d3e-6f94-4888-8330-4018c8ecaffd.jpg)
 
- If we have an error according to these columns' names, we would need to make a change in its regarding column as the following image shows.
+ If we have an error according to these columns' names, we would need to make a change in its regarding column as the following image shows.\
  ![keyVariables](https://user-images.githubusercontent.com/68198144/176250825-6a1b777d-5554-4e4b-b48b-84b5866c9f18.jpg)
 
 
 ## Case 3:
 If you need to use or change another email account, such as "from" or "to," you can do so within the **.env** file.
 ![env](https://user-images.githubusercontent.com/68198144/176249373-c09d2b43-760b-4b57-afed-f563b9982c6a.jpg)
+
+# Final Result
+![result](https://user-images.githubusercontent.com/68198144/176276712-7a2dba55-7d01-43da-84e4-28d88da5a136.jpg)
