@@ -47,6 +47,8 @@ Now the web page only has one table that we are using for getting the informatio
 The webpage owner could changes as well the column titles and this actions could affect our process, now we are using the columns ["State / Province","Rate", "Special Diesel","Biodiesel"]. If we have an error according to these columns names, we would need make a change in its regarding column as the follow image shows
 ![columnTitles](https://user-images.githubusercontent.com/68198144/176250034-9a0e0d3e-6f94-4888-8330-4018c8ecaffd.jpg)
 
+![keyVariables](https://user-images.githubusercontent.com/68198144/176250825-6a1b777d-5554-4e4b-b48b-84b5866c9f18.jpg)
+
 
 ## Case 3:
 If you need to use or change other email account such as "from" or "to", within .env file you could make those changes
