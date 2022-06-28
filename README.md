@@ -35,7 +35,7 @@ This file was created as a email template and is used from openHtml function
 ![template](https://user-images.githubusercontent.com/68198144/176249088-85739592-285c-4a82-99ec-1998f2a4a2ea.jpg)
 
 # User Manual
-As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this can affect us.
+As all automations it is important having in mind that all resources we are using in this solution are not handle by ourselves, the webpage design can be change by its owner and this could affect the process.
 ## Case 1:
 Today the web page only has one table that we are using for getting the information we need, but The webpage owner could add another table or more 
 ![webpage](https://user-images.githubusercontent.com/68198144/176249877-bdc0b017-cf0a-4584-933e-f1508f042a54.jpg)
