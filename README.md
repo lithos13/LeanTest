@@ -15,14 +15,20 @@ Python v3.10.4
 ## taxes.py
 The main script was created in this file and it has the following functions:
 * **getTaxes()**: This function uses pandas library for getting the table from on taxes webpage and processing its regarding data according to the given requirements
-* ![get_Taxes](https://user-images.githubusercontent.com/68198144/176247544-d5722c3c-9032-4208-a889-018f8c396e98.jpg)
-* 
+![get_Taxes](https://user-images.githubusercontent.com/68198144/176247544-d5722c3c-9032-4208-a889-018f8c396e98.jpg)
+
 * **openHtml()**: This function uses **template.html** which has the email design and replaces labels with its regarding information
+![openHTML](https://user-images.githubusercontent.com/68198144/176248285-0b63f09a-f232-4592-9db8-8a42a56b9706.jpg)
+
 * **buildMail()**:This function starts the process once it is called and according to the process logical steps, calls the regarding other functions
+![buildEmail](https://user-images.githubusercontent.com/68198144/176248471-d0b394bd-df5a-4a17-88d0-5fc0af6af98d.jpg)
+
 * **sendMail()**: this functions connect with email account and sends email.
+![sendMail](https://user-images.githubusercontent.com/68198144/176248396-ebab5fba-d65d-404e-bd83-54ccf51a760b.jpg)
 
 ##template.html
 This file was created as a email template and is used from openHtml function
+
 
 ## .env
 For executing process it should be create an enviroment file with the following variables:
