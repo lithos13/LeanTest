@@ -16,8 +16,7 @@ def getTaxes():
     biodiesel ="Biodiesel"
     special   ="Special Diesel"
     rate      ="Rate"
-    df        = df[[state,rate, special, biodiesel]]
-    
+    df        = df[[state,rate, special, biodiesel]]   
 
     #Canada details
     dfCan  = df.loc[(df[rate] == 'Can.')]
@@ -25,31 +24,29 @@ def getTaxes():
     maxCanBio = dfCan[biodiesel].max()
     maxCanSpe = dfCan[special].max()
     minCanBio = dfCan[biodiesel].min()
-    minCanSpe = dfCan[special].min()
-           
+    minCanSpe = dfCan[special].min()           
+
     #US details
     dfUS    = df.loc[(df[rate] == 'U.S.')]
     taxUS   = build_table(dfUS, 'blue_light')
     maxUSBio= dfUS[biodiesel].max()
     maxUSSpe= dfUS[special].max()    
     minUSBio= dfUS[biodiesel].min()
-    minUSSpe= dfUS[special].min()   
-    
-    
+    minUSSpe= dfUS[special].min()           
+
     # Max per country
     maxim   = {'Country'            : ['Canada', 'United States'],
-                'Max Diesel Special': [maxCanSpe, maxUSSpe],
-                'Max Biodiesel'     : [maxCanBio, maxUSBio]}
+                'Highest Diesel Special': [maxCanSpe, maxUSSpe],
+                'Highest Biodiesel'     : [maxCanBio, maxUSBio]}
     dfMaxim = pd.DataFrame(maxim)
-    maxTab      = build_table(dfMaxim, 'blue_light')       
-
+    maxTab      = build_table(dfMaxim, 'blue_light')      
+     
     # Min per country
     minim   = {'Country'            : ['Canada', 'United States'],
-                'Min Diesel Special': [minCanSpe, minUSSpe],
-                'Min Biodiesel'     : [minCanBio, minUSBio]}
+                'Lowest Diesel Special': [minCanSpe, minUSSpe],
+                'Lowest Biodiesel'     : [minCanBio, minUSBio]}
     dfMinim = pd.DataFrame(minim)
     minTab      = build_table(dfMinim, 'blue_light')     
-
 
     return [taxCan, taxUS, maxTab, minTab]
 
